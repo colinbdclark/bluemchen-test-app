@@ -11,11 +11,9 @@ jobs:
         with:
           submodules: recursive
 
-      # - name: Install ARM build toolchain
-      #   run: |
-      #     brew install openocd dfu-util gcc-arm-embedded
-      #     find /usr/local/Caskroom/gcc-arm-embedded -type f -perm +111 -print | xargs spctl --add --label "gcc-arm-embedded"
-      #     find /usr/local/Caskroom/gcc-arm-embedded | xargs xattr -d com.apple.quarantine
+      - name: Install ARM build toolchain
+        run: |
+          brew install openocd dfu-util gcc-arm-embedded
 
       # - name: Build libDaisy dependency
       #   run: |
