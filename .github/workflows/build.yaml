@@ -31,6 +31,3 @@ jobs:
         run: |
           cd dependencies/kxmx_bluemchen/DaisySP
           make
-
-     - name: Build DaisySP dependency
-        run: make
