@@ -12,8 +12,7 @@ jobs:
           submodules: recursive
 
       - name: Install ARM build toolchain
-        run: |
-          brew install openocd dfu-util gcc-arm-embedded
+        run: brew install gcc-arm-embedded
 
       # - name: Build libDaisy dependency
       #   run: |
