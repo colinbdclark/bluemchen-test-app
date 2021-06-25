@@ -14,15 +14,15 @@ jobs:
       - name: Install ARM build toolchain
         run: brew install gcc-arm-embedded
 
-      # - name: Build libDaisy dependency
-      #   run: |
-      #     cd dependencies/kxmx_bluemchen/libDaisy
-      #     make
+      - name: Build libDaisy dependency
+        run: |
+          cd dependencies/kxmx_bluemchen/libDaisy
+          make
 
-      # - name: Build DaisySP dependency
-      #   run: |
-      #     cd dependencies/kxmx_bluemchen/DaisySP
-      #     make
+      - name: Build DaisySP dependency
+        run: |
+          cd dependencies/kxmx_bluemchen/DaisySP
+          make
 
-      # - name: Build app
-      #   run: make
+      - name: Build app
+        run: make
