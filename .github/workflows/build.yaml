@@ -16,21 +16,21 @@ jobs:
         with:
           submodules: recursive
 
-      -name: Install ARM build toolchait
+      - name: Install ARM build toolchait
         run: |
           brew install openocd dfu-util gcc-arm-embedded
           find /usr/local/Caskroom/gcc-arm-embedded -type f -perm +111 -print | xargs spctl --add --label "gcc-arm-embedded"
           find /usr/local/Caskroom/gcc-arm-embedded | xargs xattr -d com.apple.quarantine
 
-      -name: Build libDaisy dependency
+      - name: Build libDaisy dependency
         run: |
           cd dependencies/kxmx_bluemchen/libDaisy
           make
 
-      -name: Build DaisySP dependency
+      - name: Build DaisySP dependency
         run: |
           cd dependencies/kxmx_bluemchen/DaisySP
           make
 
-     -name: Build DaisySP dependency
+     - name: Build DaisySP dependency
         run: make
