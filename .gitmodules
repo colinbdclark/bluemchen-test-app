@@ -1,0 +1,3 @@
+[submodule "dependencies/kxmx_bluemchen"]
+	path = dependencies/kxmx_bluemchen
+	url = https://github.com/recursinging/kxmx_bluemchen.git
