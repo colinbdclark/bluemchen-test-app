@@ -13,9 +13,8 @@ Parameter cv2;
 void UpdateOled() {
     bluemchen.display.Fill(false);
 
-    // Display Encoder test increment value and pressed state
     bluemchen.display.SetCursor(0, 0);
-    std::string str = "Hello Eurorack!";
+    std::string str = "Hello Euro";
     char *cstr = &str[0];
     bluemchen.display.WriteString(cstr, Font_6x8, true);
 
